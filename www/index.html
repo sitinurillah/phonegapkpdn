@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.5.css">
+        <script type="text/javascript" src="jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <!--<div class="app">
+            <h1>Nuri</h1>-->
+            <div id="home" data-role="page">
+                <div data-role="header">
+                  <h1><img src="logo_jata.png" border="0"></h1>
+                    <!--<p class="event listening">Connecting to Device</p>
+                    <p class="event received">Device is Ready</p>-->
+                </div>
+                <div data-role="content">
+               <!--    <p><img src="logo_jata.png" border="0"> -->
+                  <p><img src="namekpdnkk.png" border="0"></p>
+                  
+                  <a href="#newpage" data-role="button">Maklumbalas / Pertanyaan Portal KPDNKK</a>
+                  
+                  <h1>Agensi</h1>
+<!--data-filter="true"-->
+
+        <p><img src="br.png" data-role="button" onclick="javascript:location.href='http://www.bankrakyat.com.my/'">
+        <img src="ssm.png" data-role="button" onclick="javascript:location.href='http://www.ssm.com.my/'">
+        <img src="pns.png" data-role="button" onclick="javascript:location.href='http://www.pns.com.my/'"></p>
+
+         <p><img src="myipo.png" data-role="button" onclick="javascript:location.href='http://www.myipo.gov.my/'">
+        <img src="MyCC.png" data-role="button" onclick="javascript:location.href='http://www.mycc.gov.my/'">
+        <img src="mkm.png" data-role="button" onclick="javascript:location.href='http://www.mkm.com.my/'"></p>
+
+                  <!-- <ul data-role="listview" data-theme="b" >
+                  <li><a data-icon="br.png" href="http://www.bankrakyat.com.my/" data-role="button">Bank Rakyat</a></li>
+                  <li><a href="http://www.pns.com.my/" data-role="button">PNS</a></li>
+                  <li><a href="http://www.ssm.com.my/" data-role="button">SSM</a></li>
+                  <li><a href="http://mycc.gov.my//" data-role="button">MyCC</a></li> -->                
+                
+                </div>
+         
+            
+                <div data-role="footer" data-position="fixed">
+                  <h1><img src="pertanyaan-aduan1.png" border="0"></h1>
+                </div>
+             </div>
+
+            <div id="newpage" data-role="page">
+                <div data-role="header">
+                <a href="#home" data-icon="home">Laman Utama</a>
+                  <h1>Borang Maklumbalas</h1>
+                 <!-- <a href="#home" data-icon="delete">Home</a>  -->
+                <!--<p class="event listening">Connecting to Device</p>
+               <p class="event received">Device is Ready</p>-->
+                </div>
+                <div data-role="content">
+                      <p><h1>Maklumbalas / Pertanyaan Portal KPDNKK</h1>
+                      <label for="text">Terima kasih kerana menggunakan laman maklum balas / pertanyaan kami. Sila pastikan alamat emel yang dinyatakan adalah betul untuk tujuan rujukan dan komunikasi.</label></p>
+
+                      <form name="data_entry" action="#">
+ 
+                      <label for="name">Nama (*) :</label>
+                    <input type="text" size="35" name="name" id="name" value="">
+                   <fieldset data-role="controlgroup" data-mini="false">
+      Jantina (*) : <input type="radio" name="radio-mini" id="radio-mini-1" value="" checked="checked" />
+      <label for="radio-mini-1">Lelaki</label>
+
+  <input type="radio" name="radio-mini" id="radio-mini-2" value=""  />
+      <label for="radio-mini-2">Perempuan</label>      
+</fieldset>
+
+                      <!-- Jantina (*) :
+                       <br></br>
+                      <input type="radio" name="jantina" value="1" id="jantina"> Lelaki
+                       <br></br>
+                      <input type="radio" name="jantina" value="2" id="jantina"> Perempuan 
+                       <br></br> -->
+                      Emel (*) : <input type="text" size="30" name="emel" id="emel" value=""> 
+
+                      Subjek (*): <input type="text" size="30" name="subjek" id="subjek" value="">
+                      Maklumbalas Anda (*) : <textarea name="mesej" id="mesej" value=""></textarea>
+
+                     <!--  Mesej Anda (*)2 : <input type="text" size="30" name="mesej" id="mesej" value=""> -->
+                     <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+<label for="checkbox-1">Saya mahu merahsiakan identiti saya</label>
+                    <!--   Privasi : <input type="checkbox" name="privacy" id="privacy" value="">
+<label for="text">Saya mahu merahsiakan identiti saya</label> -->
+    <a id="savebutton" href="" data-role="button">Hantar</a>
+
+<input type="button" name="reset_form" value="Set Semula" onclick="this.form.reset();">
+<a id="showbutton" href="" data-role="button">Papar Aduan</a>
+ 
+
+</form>
+
+                    <!--   <label for="name">Nama : </label>
+                      <input type="text" name="name" id="name" value="" />
+                      <label for="email">E-mail : </label>
+                      <input type="text" name="email" id="email" value="" />
+                      <label for="subjek">Subjek : </label>
+                      <input type="text" name="subjek" id="subjek" value="" />
+                      <label for="mesej">Mesej Anda : </label>
+                      <input type="text" name="mesej" id="mesej" value="" /> -->
+                   
+                     
+                </div>
+       
+           <div data-role="footer" data-position="fixed">
+                  <h1><img src="pertanyaan-aduan1.png" border="0"></h1>
+                </div>
+          
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+
+            $(function (){
+                $('#savebutton').click(function() {
+                if($('#name').val() == "") {
+                alert('Sila Masukkan nama anda');}
+                  if($('#radio-mini-1').val() and '#radio-mini-2'.val() == "") {
+                alert('Sila Masukkan Jantina');}
+                  if($('#emel').val() == "") {
+                alert('Sila Masukkan emel anda');}
+                  if($('#subjek').val() == "") {
+                alert('Sila Masukkan subjek anda');}
+                  if($('#mesej').val() == "") {
+                alert('Sila Masukkan maklumbalas anda');}
+                
+                  window.localStorage.setItem("name", $('#name').val());
+                    $('#name').val('');
+                    window.localStorage.setItem("radio-mini-1", $('#radio-mini-1').val());
+                    $('#radio-mini-1').val('');
+                     window.localStorage.setItem("radio-mini-2", $('#radio-mini-2').val());
+                    $('#radio-mini-2').val('');
+                     window.localStorage.setItem("emel", $('#emel').val());
+                    $('#emel').val('');
+                     window.localStorage.setItem("subjek", $('#subjek').val());
+                    $('#subjek').val('');
+                     window.localStorage.setItem("mesej", $('#mesej').val());
+                    $('#mesej').val('');  
+                    window.localStorage.setItem("checkbox-1", $('#checkbox-1').val());
+                    $('#checkbox-1').val('');   
+
+
+                });
+
+            $('#showbutton').click(function() { 
+               window.setItem
+                var name = window.localStorage.getItem("name");
+                    if(name.length > 0) {
+                    $('#name').val(name);}
+                var jantina1 = window.localStorage.getItem("radio-mini-1");
+                    if(jantina1.length > 0) {
+                    $('#radio-mini-1').val(radio-mini-1);}
+                    var jantina2 = window.localStorage.getItem("radio-mini-2");
+                    if(jantina2.length > 0) {
+                    $('#radio-mini-2').val(radio-mini-2);}
+                var emel = window.localStorage.getItem("emel");
+                   if(emel.length > 0) {
+                    $('#emel').val(emel);}
+                var subjek = window.localStorage.getItem("subjek");
+                if(subjek.length > 0) {
+                    $('#subjek').val(subjek);}
+                var mesej = window.localStorage.getItem("mesej");
+                if(mesej.length > 0) {
+                    $('#mesej').val(mesej);}
+                var checkbox-1 = window.localStorage.getItem("checkbox-1");
+                 if(checkbox-1.length > 0) {
+                    $('#checkbox-1').val(checkbox-1);}
+                    alert($checkbox-1);
+            
+            });
+            });
+        </script>
+    </body>
+</html>
